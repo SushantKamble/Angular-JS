@@ -1,0 +1,14 @@
+ng-init : This directive initializes application data.
+
+ng-repeat : This directive repeats html elements for each item in a collection.
+
+Expressions are used to bind application data to html. Expressions are written inside double braces like {{ expression}}. Expressions behaves in same way as ng-bind directives. AngularJS application expressions are pure javascript expressions and outputs the data where they are used.
+
+Using numbers
+<p>Expense on Books : {{cost * quantity}} Rs</p>
+Using strings
+<p>Hello {{student.firstname + " " + student.lastname}}!</p>
+Using object
+<p>Roll No: {{student.rollno}}</p>
+Using array
+<p>Marks(Math): {{marks[3]}}</p>

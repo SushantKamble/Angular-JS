@@ -1,0 +1,98 @@
+Prerequisite : 
+--------------
+HTML,CSS, Javascript
+
+AngularJS History
+-----------------
+AngularJS version 1.0 was released in 2012.
+
+Miško Hevery, a Google employee, started to work with AngularJS in 2009.
+
+The idea turned out very well, and the project is now officially supported by Google.
+
+Why
+---
+
+how to use client-side data binding to build dynamic views of data that change immediately in response to user actions.
+
+Angular keeps your views in sync with your data without the need for DOM manipulation.
+
+how to use dependency injection and services to make common web tasks, such as getting data into your app, easier.
+
+
+syntax
+-------
+AngularJS is a JavaScript framework. It can be added to an HTML page with a <script> tag.
+
+AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions.
+
+AngularJS is a JavaScript Framework
+AngularJS is a JavaScript framework. It is a library written in JavaScript.
+
+AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag:
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+
+example
+-------
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+ 	<p>Name: <input type="text" ng-model="name"></p>
+ 	<p ng-bind="name"></p>
+</div>
+
+</body>
+</html>
+
+AngularJS starts automatically when the web page has loaded.
+
+The ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
+
+The ng-model directive binds the value of the input field to the application variable name.
+
+The ng-bind directive binds the innerHTML of the <p> element to the application variable name.
+
+
+AngularJS Directives
+As you have already seen, AngularJS directives are HTML attributes with an ng prefix.
+
+The ng-init directive initializes AngularJS application variables.
+example
+-------
+<div ng-app="" ng-init="firstName='John'">
+
+<p>The name is <span ng-bind="firstName"></span></p>
+
+</div>
+
+Alternatively with valid HTML:
+<div data-ng-app="" data-ng-init="firstName='John'">
+
+<p>The name is <span data-ng-bind="firstName"></span></p>
+
+</div>
+
+AngularJS Expressions
+AngularJS expressions are written inside double braces: {{ expression }}.
+
+AngularJS will "output" data exactly where the expression is written:
+example
+-------
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+ 	<p>My first expression: {{ 5 + 5 }}</p>
+</div>
+
+</body>
+</html>
+
+AngularJS expressions bind AngularJS data to HTML the same way as the ng-bind directive.
