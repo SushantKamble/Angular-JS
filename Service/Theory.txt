@@ -1,0 +1,23 @@
+In AngularJS you can make your own service, or use one of the many built-in services.
+
+What is a Service?
+In AngularJS, a service is a function, or object, that is available for, and limited to, your AngularJS application.
+
+AngularJS has about 30 built-in services. One of them is the $location service.
+
+The $location service has methods which return information about the location of the current web page
+
+
+Why use Services?
+For many services, like the $location service, it seems like you could use objects that are already in the DOM, like the window.location object, and you could, but it would have some limitations, at least for your AngularJS application.
+
+AngularJS constantly supervises your application, and for it to handle changes and events properly, AngularJS prefers that you use the $location service instead of the window.location object.
+
+
+
+
+
+
+
+
+
